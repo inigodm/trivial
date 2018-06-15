@@ -1,0 +1,12 @@
+<div class="row" style="padding: 69px;">
+  <div *ngFor="let card of cardArray; let i = index" class="container col-xs-12 col-sm-12 col-md-6 col-lg-4"
+  style="justify-content: safe">
+    <app-card [card]="card" (resultAvailable)='contarResultados($event)'></app-card>
+  </div>   
+</div>
+<div class="footer">
+    <h3 class="panel-title">Resultados: Correctos {{ok}}  Errores: {{ko}}</h3>
+    
+  </div>
+  
+    
